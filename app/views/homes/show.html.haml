@@ -1,0 +1,6 @@
+%ul
+  - @tweets.each do |tweet|
+    %li
+      = tweet[:text]
+
+= link_to "Get more tweets", home_path(since_id: @tweets.last[:id]), remote: true
