@@ -1,2 +1,4 @@
-- @tweets.each do |tweet|
-  $("ul.tweet-list").append("<li>#{tweet.text}</li>");
+- @tweets[0..-2].each do |tweet|
+  $("ul.tweet-list").append("#{escape_javascript render('tweet', tweet: tweet)}");
+
+$("div.actions").html("#{escape_javascript render('link_to_tweets', max_id: @tweets.last['id'])}");

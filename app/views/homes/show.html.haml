@@ -1,6 +1,6 @@
 %ul.tweet-list
-  - @tweets.each do |tweet|
-    %li
-      = tweet[:text]
+  - @tweets[0..-2].each do |tweet|
+    = render 'tweet', tweet: tweet
 
-= link_to "Get more tweets", home_path(since_id: @tweets.last[:id]), remote: true
+.actions
+  = render 'link_to_tweets', max_id: @tweets.last[:id]
