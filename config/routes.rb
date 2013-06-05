@@ -2,6 +2,7 @@ Tweets::Application.routes.draw do
   root to: 'homes#show'
 
   resource :home
+  resources :favorites
 
 
   # The priority is based upon order of creation:
