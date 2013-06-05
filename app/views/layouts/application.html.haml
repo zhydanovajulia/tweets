@@ -20,23 +20,28 @@
   %body
     .navbar.navbar-static-top.navbar-inverse
       .navbar-inner
-        .container
-          %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          .brand Tweets
-          .container.nav-collapse
-            %ul.nav
-              %li{class: ('active' if controller_name == 'homes')}= link_to "Home", home_path
-              %li{class: ('active' if controller_name == 'favorites')}= link_to "Favourites", favorites_path
+        .row
+          .span4
+          .span7
+            .container
+              %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              .brand Tweets
+              .container.nav-collapse
+                %ul.nav
+                  %li{class: ('active' if controller_name == 'homes')}= link_to "Home", home_path
+                  %li{class: ('active' if controller_name == 'favorites')}= link_to "Favourites", favorites_path
+          .span4
 
     .container
-
       .row
+        .span2
         .span7
           = bootstrap_flash
           = yield
+        .span2
     /
       Javascripts
       \==================================================
