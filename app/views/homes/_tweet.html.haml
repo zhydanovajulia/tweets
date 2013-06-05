@@ -2,6 +2,6 @@
   = auto_link tweet.text
   .more_information
     .date
-      = tweet.created_at
+      = tweet.created_at.to_s(:short)
     .favourite_links
       = link_to_like_unlike tweet
