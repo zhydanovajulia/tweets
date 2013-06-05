@@ -1,1 +1,3 @@
-$("li#tweet_#{@id}").remove()
+$("li#tweet_#{@id}").slideUp('fast', function(){
+$("li#tweet_#{@id}").remove();
+});

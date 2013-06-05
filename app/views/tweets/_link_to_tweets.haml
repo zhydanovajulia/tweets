@@ -1,1 +1,3 @@
-= link_to "Get more tweets", home_path(max_id: tweets.last['id']), remote: true
+= link_to home_path(max_id: tweets.last['id']), remote: true, class: ['btn', 'btn-success'] do
+  %i.icon-download-alt
+  Get more tweets

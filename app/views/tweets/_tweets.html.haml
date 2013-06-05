@@ -1,4 +1,2 @@
 %ul.tweet-list
   = render 'tweet_list', tweets: tweets[0..-2]
-.actions
-  = render 'link_to_tweets', max_id: tweets.last[:id], tweets: tweets

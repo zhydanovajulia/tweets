@@ -9,6 +9,7 @@ gem 'pg'
 gem 'twitter'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem "rails_autolink"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

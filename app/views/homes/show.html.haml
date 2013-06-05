@@ -1,3 +1,10 @@
-= link_to "Refresh tweets", home_path(since_id: @tweets.first.id), method: :put, remote: true
+.actions
+  = link_to home_path(since_id: @tweets.first.id), method: :put, remote: true, class: ['btn', 'btn-info'] do
+    %i.icon-repeat
+    Get new tweets
+
 = render 'tweets/tweets', tweets: @tweets
+
+.actions
+  = render 'link_to_tweets', max_id: @tweets.last[:id], tweets: @tweets
 

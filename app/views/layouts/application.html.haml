@@ -18,26 +18,25 @@
 
 
   %body
-    .navbar
+    .navbar.navbar-static-top.navbar-inverse
       .navbar-inner
         .container
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href=root_path) Tweets
+          .brand Tweets
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Favourites", favorites_path
+              %li{class: ('active' if controller_name == 'homes')}= link_to "Home", home_path
+              %li{class: ('active' if controller_name == 'favorites')}= link_to "Favourites", favorites_path
 
     .container
 
       .row
-        .span9
+        .span7
           = bootstrap_flash
           = yield
-      %footer
-        %p &copy; Company 2012
     /
       Javascripts
       \==================================================

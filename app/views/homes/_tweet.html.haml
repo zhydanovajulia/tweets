@@ -1,3 +1,7 @@
 %li{id: "tweet_#{tweet.id}"}
-  = tweet.text
-  = link_to_like_unlike tweet
+  = auto_link tweet.text
+  .more_information
+    .date
+      = tweet.created_at
+    .favourite_links
+      = link_to_like_unlike tweet

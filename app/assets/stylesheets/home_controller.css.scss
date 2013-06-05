@@ -1,3 +1,44 @@
-// Place all the styles related to the home_controller controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.actions {
+  margin: 10px 0 0 25px;
+}
+a {
+  &.like, &.unlike {
+    width: 50px;
+  }
+}
+
+ul.tweet-list {
+  list-style: none outside none;
+  margin-top: 10px;
+  li {
+    &:first-child {
+      border-top: 1px solid #dddddd;
+    }
+    &:hover {
+      background: #f9f9f9;
+    }
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding: 10px;
+    //line-height: 25px;
+    line-height: inherit;
+    div {
+      &.more_information {
+        margin-top: 10px;
+        font-size: 11px;
+
+        .date {
+          color: #666;
+          display: inline-block;
+          width: 89%;
+        }
+        .favourite_links {
+          display: inline-block;
+          width: 10%;
+        }
+      }
+    }
+
+  }
+}
