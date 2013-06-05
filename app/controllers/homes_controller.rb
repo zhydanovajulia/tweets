@@ -1,4 +1,4 @@
-class HomesController < ApplicationController
+class HomesController < TweetsController
 
   def show
     @tweets = params[:max_id].present? ? Twitter.user_timeline(screen_name: '@ciklum', max_id: params[:max_id], count: 21) :
