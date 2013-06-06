@@ -1,0 +1,202 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/favorites/list.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 4.7.0
+      Authorization:
+      - OAuth oauth_consumer_key="D1KiJJ9govlq1bnNNVfUlw", oauth_nonce="78bf7eae466ed3d7e088f20f678b2af6",
+        oauth_signature="QlDsgI5Y3iBpVVP97ePHQp9EGbw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1370543817", oauth_token="254776905-sC2ZVmPxoxYfp6GHYj8P8P51Dc6OmYCNTFcgqVpu",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2187'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 06 Jun 2013 18:36:58 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 06 Jun 2013 18:36:58 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A137054381799867408; Domain=.twitter.com; Path=/; Expires=Sat,
+        06-Jun-2015 18:36:58 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1370544718'
+      X-Transaction:
+      - 78b1175dbfc093c3
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        7xDsPxuLQ2a9f/8HAAAA//8DAKCHuZX/NQAA
+    http_version: 
+  recorded_at: Thu, 06 Jun 2013 18:36:57 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/favorites/destroy.json
+    body:
+      encoding: US-ASCII
+      string: id=341919855823429632
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 4.7.0
+      Authorization:
+      - OAuth oauth_consumer_key="D1KiJJ9govlq1bnNNVfUlw", oauth_nonce="512c5729c90e9cf593c9a25c2f3cd695",
+        oauth_signature="MSlW7XZo7UR0gtEfU%2FXONVv59pk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1370553424", oauth_token="254776905-sC2ZVmPxoxYfp6GHYj8P8P51Dc6OmYCNTFcgqVpu",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '2690'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 06 Jun 2013 21:17:05 GMT
+      Etag:
+      - ! '"2e39d7168a76adda199aed15de3c67d7"'
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 06 Jun 2013 21:17:05 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - _twitter_sess=BAh7CDoMY3NyZl9pZCIlNDY3YTAxYjFlN2E3ZjZmZDY4MWFiMDQ2N2I4OGM4%250ANzE6D2NyZWF0ZWRfYXRsKwhPnlkbPwE6B2lkIiVjNWU2NWE2NzdlYWM4ZDA0%250AZGZkZDAxZjQ2ODc2NTgyOA%253D%253D--a8f5535c9d777d524b9d39997b5086f155379167;
+        domain=.twitter.com; path=/; HttpOnly
+      - dnt=; domain=.twitter.com; path=/; expires=Thu, 01-Jan-1970 00:00:00 GMT
+      - guest_id=v1%3A137055342534335375; Domain=.twitter.com; Path=/; Expires=Sat,
+        06-Jun-2015 21:17:05 UTC
+      - lang=en; path=/
+      - lang=en; path=/
+      - lang=en; path=/
+      - twid=u%3D254776905%7Ctc7P1S5bcSDSiN5h0BIbx4y%2BFaU%3D; domain=.twitter.com;
+        path=/; secure
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Access-Level:
+      - read-write
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mid:
+      - e339efde715ee0acc4c8c91c57540f2a11bf7927
+      X-Runtime:
+      - '0.16542'
+      X-Transaction:
+      - 6f27769faa90b869
+      X-Transaction-Mask:
+      - a6183ffa5f8ca943ff1b53b5644ef1145e24d18f
+    body:
+      encoding: US-ASCII
+      string: ! '{"entities":{"hashtags":[],"user_mentions":[{"id":14116807,"indices":[73,83],"screen_name":"ShareThis","id_str":"14116807","name":"ShareThis"}],"urls":[{"url":"http:\/\/t.co\/oDLptnMKFB","indices":[46,68],"display_url":"shar.es\/w4qMz","expanded_url":"http:\/\/shar.es\/w4qMz"}]},"coordinates":null,"contributors":null,"place":null,"user":{"profile_text_color":"333333","time_zone":"Kyiv","follow_request_sent":false,"url":"http:\/\/t.co\/P7y0SnFM","name":"Ciklum","verified":false,"location":"Kiev,
+        Ukraine","statuses_count":3771,"is_translator":false,"profile_sidebar_border_color":"EEEEEE","screen_name":"ciklum","id":30045349,"notifications":false,"entities":{"url":{"urls":[{"indices":[0,20],"url":"http:\/\/t.co\/P7y0SnFM","display_url":"ciklum.com","expanded_url":"http:\/\/www.ciklum.com"}]},"description":{"urls":[]}},"default_profile_image":false,"profile_background_tile":false,"geo_enabled":true,"favourites_count":6,"profile_sidebar_fill_color":"F6F6F6","profile_image_url":"http:\/\/a0.twimg.com\/profile_images\/1554594169\/Logo_Ciklum_Empowering_Collaboration_180by180_normal.jpg","utc_offset":7200,"followers_count":1686,"lang":"en","profile_banner_url":"https:\/\/si0.twimg.com\/profile_banners\/30045349\/1357309486","profile_background_color":"ACDED6","created_at":"Thu
+        Apr 09 19:12:58 +0000 2009","profile_background_image_url_https":"https:\/\/si0.twimg.com\/profile_background_images\/322417483\/Twitter_Background.jpg","protected":false,"description":"Danish
+        IT outsourcing services provider in Ukraine, Belarus, Pakistan. Tweeting about
+        Agile software development,  IT job openings, high-tech news & events...","default_profile":false,"profile_background_image_url":"http:\/\/a0.twimg.com\/profile_background_images\/322417483\/Twitter_Background.jpg","contributors_enabled":false,"friends_count":764,"profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/1554594169\/Logo_Ciklum_Empowering_Collaboration_180by180_normal.jpg","profile_link_color":"038543","following":true,"id_str":"30045349","profile_use_background_image":true,"listed_count":48},"truncated":false,"in_reply_to_user_id":null,"in_reply_to_status_id_str":null,"retweet_count":0,"source":"\u003Ca
+        href=\"http:\/\/twitter.com\/tweetbutton\" rel=\"nofollow\"\u003ETweet Button\u003C\/a\u003E","possibly_sensitive_editable":true,"in_reply_to_user_id_str":null,"retweeted":false,"id":341919855823429632,"created_at":"Tue
+        Jun 04 14:10:20 +0000 2013","possibly_sensitive":false,"geo":null,"in_reply_to_status_id":null,"in_reply_to_screen_name":null,"text":"Disrupting
+        Mobile Games Porting | CIKLUM BLOG http:\/\/t.co\/oDLptnMKFB via @sharethis","id_str":"341919855823429632","favorited":false}'
+    http_version: 
+  recorded_at: Thu, 06 Jun 2013 21:17:05 GMT
+recorded_with: VCR 2.5.0
