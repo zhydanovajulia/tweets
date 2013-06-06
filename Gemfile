@@ -28,6 +28,9 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'vcr'
   gem 'webmock'
+  gem 'capybara-webkit', github: 'thoughtbot/capybara-webkit', branch: 'master'
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end
 
 # To use ActiveModel has_secure_password
