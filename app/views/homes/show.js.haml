@@ -1,3 +1,5 @@
 $("ul.tweet-list").append("#{escape_javascript render('tweets/tweet_list', tweets: @tweets[0..-2])}");
+- unless @tweets.empty?
+  $("div.actions.get-more-tweets").html("#{escape_javascript render('tweets/link_to_tweets', max_id: @tweets.last['id'], tweets: @tweets)}");
 
-$("div.actions").html("#{escape_javascript render('tweets/link_to_tweets', max_id: @tweets.last['id'], tweets: @tweets)}");
+showFlash("#{j bootstrap_flash}");

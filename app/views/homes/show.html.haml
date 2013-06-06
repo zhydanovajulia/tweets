@@ -1,10 +1,9 @@
-.actions
-  = link_to home_path(since_id: @tweets.first.id), method: :put, remote: true, class: ['btn', 'btn-info'] do
-    %i.icon-repeat
-    Get new tweets
+- if @tweets.any?
+  .actions.get-new-tweets
+    = render 'tweets/link_to_new_tweets', since_id: @tweets.first.id
 
-= render 'tweets/tweets', tweets: @tweets
+  = render 'tweets/tweets', tweets: @tweets
 
-.actions
-  = render 'link_to_tweets', max_id: @tweets.last[:id], tweets: @tweets
+  .actions.get-more-tweets
+    = render 'link_to_tweets', max_id: @tweets.last[:id], tweets: @tweets
 

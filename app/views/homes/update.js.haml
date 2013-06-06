@@ -1,1 +1,5 @@
 $('ul.tweet-list').prepend("#{escape_javascript render('tweets/tweet_list', tweets: @tweets)}")
+
+- unless @tweets.empty?
+  $("div.actions.get-new-tweets").html("#{escape_javascript render('tweets/link_to_new_tweets', since_id: @tweets.first.id, tweets: @tweets)}");
+showFlash("#{j bootstrap_flash}");
